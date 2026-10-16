@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!--Title-->
+            <a class="navbar-brand fw-bolder px-5" href="@Url.Action("Index", "Home")" style="font-size:25px !important; cursor: none">School Management System</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+
+        <!--Side Bar-->
+        <div class="sidebar">
+            <ul style="list-style:none;padding:0 !important">
+                <li class="nav-item">
+                    @Html.ActionLink("Student Management","Index","Student", new {area = "" }, new {@class = "nav-link"})
+                </li>
+            </ul>
+        </div>
+
+
+        <!--Main Content Area-->
+        <div class="wrapper-content">
+            @RenderBody()
+
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
