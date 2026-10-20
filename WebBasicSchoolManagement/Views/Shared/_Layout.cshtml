@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="https://cloudflare.com" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
@@ -18,9 +20,29 @@
 
         <!--Side Bar-->
         <div class="sidebar">
-            <ul style="list-style:none;padding:0 !important">
+            <div style="display:flex;align-content:center;justify-content:center">
+                <img src="~/Images_container/logo.jpg" alt="logo" style="width:150px;height150px;border-radius:50%"/>
+            </div>
+            <ul style="list-style:none;padding:0 !important;margin-top:10px">
                 <li class="nav-item">
-                    @Html.ActionLink("Student Management","Index","Student", new {area = "" }, new {@class = "nav-link"})
+                    @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link fa fa-regular fa-user " })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link" })
+
+                </li>
+
+                <li class="nav-item">
+                    @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link" })
+
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link" })
+
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link" })
+
                 </li>
             </ul>
         </div>

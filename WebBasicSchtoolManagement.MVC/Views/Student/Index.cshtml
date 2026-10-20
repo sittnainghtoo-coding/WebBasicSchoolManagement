@@ -1,0 +1,50 @@
+﻿@using WebBasicSchoolManagement.Database.AppDbContextModels
+@model List<TblStudent>
+@{
+	ViewData["Title"] = "Student Page";
+	string gender = string.Empty;
+}
+<main>
+	<section class="row">
+	<h3>Students List</h3>
+	</section>
+	<section>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Student Name</th>
+					<th>Student Father Name</th>
+					<th>Student Age</th>
+					<th>Birthday</th>
+					<th>Gender</th>
+					<th>Resgistration Date</th>
+					<th></th>
+					<th></th>
+
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (TblStudent item in Model)
+				{
+					<tr>
+
+						<td>@item.StdName</td>
+						<td>@item.FatherName</td>
+						<td>@item.StdAge</td>
+						<td>@item.Dob</td>
+						<td>@(item.Gender)</td>
+						<td>@item.ResgisterDate</td>
+						<td>
+							<a href="/blog/edit/@(item.StdId)" class="btn btn-warning">Edit</a>
+						</td>
+						<td>
+							<a href="/blog/delete/@(item.StdId)" class="btn btn-danger">Delete</a>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</section>
+</main>
+
+

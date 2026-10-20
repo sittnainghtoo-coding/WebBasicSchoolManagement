@@ -50,9 +50,10 @@ textarea {
     color:white;
 }
 
-    .sidebar .nav-item .nav-link:hover {
+ .sidebar .nav-item .nav-link:hover {
        background-color:#c1bbbb;
        cursor: pointer;
        border-bottom:1px solid white;
        color: white;
-    }
+
+ }

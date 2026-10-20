@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBasicSchoolManagement", "WebBasicSchoolManagement\WebBasicSchoolManagement.csproj", "{56C715C0-EE16-49B6-94B8-246D499E250A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBasicSchoolManagement.Database", "WebBasicSchoolManagement.Database\WebBasicSchoolManagement.Database.csproj", "{78038962-960F-44FC-BE2B-B2E46133AA41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBasicSchtoolManagement.MVC", "WebBasicSchtoolManagement.MVC\WebBasicSchtoolManagement.MVC.csproj", "{7761449A-203F-494E-8D67-B18CE11E68D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{56C715C0-EE16-49B6-94B8-246D499E250A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56C715C0-EE16-49B6-94B8-246D499E250A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56C715C0-EE16-49B6-94B8-246D499E250A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78038962-960F-44FC-BE2B-B2E46133AA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78038962-960F-44FC-BE2B-B2E46133AA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78038962-960F-44FC-BE2B-B2E46133AA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78038962-960F-44FC-BE2B-B2E46133AA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7761449A-203F-494E-8D67-B18CE11E68D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7761449A-203F-494E-8D67-B18CE11E68D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7761449A-203F-494E-8D67-B18CE11E68D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7761449A-203F-494E-8D67-B18CE11E68D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

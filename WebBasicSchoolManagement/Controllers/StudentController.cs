@@ -8,10 +8,20 @@ namespace WebBasicSchoolManagement.Controllers
 {
     public class StudentController : Controller
     {
+
+        private AppDbContext _db = new AppDbContext();
+
         // GET: Student
         public ActionResult Index()
         {
             return View();
+        }
+
+
+        public ActionResult Index()
+        {
+            var data = _db.YourTableName.ToList();
+            return View(data);
         }
     }
 }
