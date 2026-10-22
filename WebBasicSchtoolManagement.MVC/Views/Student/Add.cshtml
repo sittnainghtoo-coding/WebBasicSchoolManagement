@@ -1,0 +1,118 @@
+﻿@using WebBasicSchoolManagement.Database.AppDbContextModels
+@model TblStudent;
+
+@{
+	ViewData["Title"] = "Add Student";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">
+                <i class="fa-solid fa-user-plus me-2"></i>
+                Add New Student
+            </h4>
+        </div>
+
+        <div class="card-body">
+            <form action="Student/Save"
+                  method="post">
+
+                @Html.AntiForgeryToken()
+
+                <div asp-validation-summary="ModelOnly"
+                     class="text-danger mb-3"></div>
+
+                <div class="row">
+
+                    <!-- Student Name -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Student Name
+                        </label>
+                        <input name="StdName"
+                               class="form-control"
+                               placeholder="Enter student name" />
+                        <span
+                              class="text-danger"></span>
+                    </div>
+
+                    <!-- Father Name -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Father Name
+                        </label>
+                        <input name="FatherName"
+                               class="form-control"
+                               placeholder="Enter father name" />
+                        <span
+                              class="text-danger"></span>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Age
+                        </label>
+                        <input name="StdAge"
+                               type="number"
+                               min="1"
+                               max="150"
+                               class="form-control"
+                               placeholder="Enter age" />
+                        <span
+                              class="text-danger"></span>
+                    </div>
+
+                    <!-- Date of Birth -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Date of Birth
+                        </label>
+                        <input name="Dob"
+                               type="date"
+                               class="form-control" />
+                        <span
+                              class="text-danger"></span>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Gender" class="form-label">Gender</label>
+
+                        <select asp-for="Gender" class="form-select">
+                            <option value="">-- Select Gender --</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span
+                              class="text-danger"></span>
+                    </div>
+
+                    
+                </div>
+
+                <hr />
+
+                <div class="d-flex gap-2 justify-content-end">
+                    <a asp-controller="Student"
+                       asp-action="Index"
+                       class="btn btn-secondary">
+                        <i class="fa-solid fa-arrow-left me-1"></i>
+                        Cancel
+                    </a>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-floppy-disk me-1"></i>
+                        Save Student
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,9 +1,15 @@
 using Microsoft.EntityFrameworkCore;
+using WebBasicSchoolManagement.BusinessLogic;
+using WebBasicSchoolManagement.DataAccess;
 using WebBasicSchoolManagement.Database.AppDbContextModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddScoped<StudentService>();
+builder.Services.AddScoped<StudentDataAccess>();
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

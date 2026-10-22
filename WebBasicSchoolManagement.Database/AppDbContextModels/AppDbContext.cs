@@ -56,18 +56,14 @@ public partial class AppDbContext : DbContext
 
         modelBuilder.Entity<TblStudent>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Tbl_Student");
+            entity.ToTable("Tbl_Student");
 
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Dob).HasColumnName("DOB");
             entity.Property(e => e.FatherName).HasMaxLength(50);
             entity.Property(e => e.Gender)
                 .HasMaxLength(10)
                 .IsUnicode(false);
-            entity.Property(e => e.Id)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("id");
             entity.Property(e => e.StdId)
                 .HasMaxLength(50)
                 .HasColumnName("StdID");

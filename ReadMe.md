@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=.;Database=SchoolManagementSystem_db;User ID=sa;Password=12345678;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o AppDbContextModels -c AppDbContext -f

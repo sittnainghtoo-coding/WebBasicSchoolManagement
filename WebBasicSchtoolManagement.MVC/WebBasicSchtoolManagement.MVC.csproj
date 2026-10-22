@@ -5,87 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Content\bootstrap-grid.css" />
-    <None Remove="Content\bootstrap-grid.css.map" />
-    <None Remove="Content\bootstrap-grid.min.css" />
-    <None Remove="Content\bootstrap-grid.min.css.map" />
-    <None Remove="Content\bootstrap-grid.rtl.css" />
-    <None Remove="Content\bootstrap-grid.rtl.css.map" />
-    <None Remove="Content\bootstrap-grid.rtl.min.css" />
-    <None Remove="Content\bootstrap-grid.rtl.min.css.map" />
-    <None Remove="Content\bootstrap-reboot.css" />
-    <None Remove="Content\bootstrap-reboot.css.map" />
-    <None Remove="Content\bootstrap-reboot.min.css" />
-    <None Remove="Content\bootstrap-reboot.min.css.map" />
-    <None Remove="Content\bootstrap-reboot.rtl.css" />
-    <None Remove="Content\bootstrap-reboot.rtl.css.map" />
-    <None Remove="Content\bootstrap-reboot.rtl.min.css" />
-    <None Remove="Content\bootstrap-reboot.rtl.min.css.map" />
-    <None Remove="Content\bootstrap-utilities.css" />
-    <None Remove="Content\bootstrap-utilities.css.map" />
-    <None Remove="Content\bootstrap-utilities.min.css" />
-    <None Remove="Content\bootstrap-utilities.min.css.map" />
-    <None Remove="Content\bootstrap-utilities.rtl.css" />
-    <None Remove="Content\bootstrap-utilities.rtl.css.map" />
-    <None Remove="Content\bootstrap-utilities.rtl.min.css" />
-    <None Remove="Content\bootstrap-utilities.rtl.min.css.map" />
-    <None Remove="Content\bootstrap.css" />
-    <None Remove="Content\bootstrap.css.map" />
-    <None Remove="Content\bootstrap.min.css" />
-    <None Remove="Content\bootstrap.min.css.map" />
-    <None Remove="Content\bootstrap.rtl.css" />
-    <None Remove="Content\bootstrap.rtl.css.map" />
-    <None Remove="Content\bootstrap.rtl.min.css" />
-    <None Remove="Content\bootstrap.rtl.min.css.map" />
-    <None Remove="Content\font-awesome.css" />
-    <None Remove="Content\font-awesome.min.css" />
-    <None Remove="Content\Site.css" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.css" />
-    <Content Include="Content\bootstrap-grid.rtl.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.css" />
-    <Content Include="Content\bootstrap-utilities.css.map" />
-    <Content Include="Content\bootstrap-utilities.min.css" />
-    <Content Include="Content\bootstrap-utilities.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.rtl.css" />
-    <Content Include="Content\bootstrap.rtl.css.map" />
-    <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\bootstrap.rtl.min.css.map" />
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\Site.css" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\WebBasicSchoolManagement.Database\WebBasicSchoolManagement.Database.csproj" />
-  </ItemGroup>
 	<ItemGroup>
+		<PackageReference Include="FontAwesome" Version="4.7.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6">
 			<PrivateAssets>all</PrivateAssets>
@@ -96,6 +17,14 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="wwwroot\lib\font-awesome\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\WebBasicSchoolManagement.BusinessLogic\WebBasicSchoolManagement.BusinessLogic.csproj" />
+	  <ProjectReference Include="..\WebBasicSchoolManagement.DataAccess\WebBasicSchoolManagement.DataAccess.csproj" />
+	  <ProjectReference Include="..\WebBasicSchoolManagement.Database\WebBasicSchoolManagement.Database.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -3,11 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBasicSchoolManagement", "WebBasicSchoolManagement\WebBasicSchoolManagement.csproj", "{56C715C0-EE16-49B6-94B8-246D499E250A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBasicSchoolManagement.Database", "WebBasicSchoolManagement.Database\WebBasicSchoolManagement.Database.csproj", "{78038962-960F-44FC-BE2B-B2E46133AA41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBasicSchtoolManagement.MVC", "WebBasicSchtoolManagement.MVC\WebBasicSchtoolManagement.MVC.csproj", "{7761449A-203F-494E-8D67-B18CE11E68D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBasicSchtoolManagement.MVC", "WebBasicSchtoolManagement.MVC\WebBasicSchtoolManagement.MVC.csproj", "{7761449A-203F-494E-8D67-B18CE11E68D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBasicSchoolManagement.DataAccess", "WebBasicSchoolManagement.DataAccess\WebBasicSchoolManagement.DataAccess.csproj", "{FF9CAB66-7B89-45DD-AD40-76C21E9EC374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBasicSchoolManagement.BusinessLogic", "WebBasicSchoolManagement.BusinessLogic\WebBasicSchoolManagement.BusinessLogic.csproj", "{620F9171-EF1B-49AB-8B39-4F51C99398EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0ECF1F01-9214-4FA9-9858-D811D763708B}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{56C715C0-EE16-49B6-94B8-246D499E250A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56C715C0-EE16-49B6-94B8-246D499E250A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56C715C0-EE16-49B6-94B8-246D499E250A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56C715C0-EE16-49B6-94B8-246D499E250A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78038962-960F-44FC-BE2B-B2E46133AA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78038962-960F-44FC-BE2B-B2E46133AA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78038962-960F-44FC-BE2B-B2E46133AA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +30,14 @@ Global
 		{7761449A-203F-494E-8D67-B18CE11E68D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7761449A-203F-494E-8D67-B18CE11E68D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7761449A-203F-494E-8D67-B18CE11E68D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9CAB66-7B89-45DD-AD40-76C21E9EC374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9CAB66-7B89-45DD-AD40-76C21E9EC374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9CAB66-7B89-45DD-AD40-76C21E9EC374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9CAB66-7B89-45DD-AD40-76C21E9EC374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{620F9171-EF1B-49AB-8B39-4F51C99398EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{620F9171-EF1B-49AB-8B39-4F51C99398EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{620F9171-EF1B-49AB-8B39-4F51C99398EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{620F9171-EF1B-49AB-8B39-4F51C99398EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebBasicSchtoolManagement.MVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
    
 </head>
@@ -27,8 +29,9 @@
                      <img src="~/img/logo.jpg" alt="logo" style="width:150px;height150px;border-radius:50%" />
                 </div>
                 <ul style="list-style:none;padding:0 !important;margin-top:10px">
-                    <li class="nav-item">
-                        @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link fa fa-regular fa-user " })
+
+                <li class="nav-item">
+                    @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link fa fa-users" })
                     </li>
                     <li class="nav-item">
                         @Html.ActionLink(" Student Management", "Index", "Student", new { area = "" }, new { @class = "nav-link" })
