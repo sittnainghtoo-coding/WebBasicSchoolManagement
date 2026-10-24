@@ -9,7 +9,7 @@ public partial class TblTeacher
 
     public string TecId { get; set; } = null!;
 
-    public string TecName { get; set; } = null!;
+    public string? TecName { get; set; }
 
-    public int SubId { get; set; }
+    public int? SubId { get; set; }
 }

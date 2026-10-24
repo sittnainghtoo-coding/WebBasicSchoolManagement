@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using WebBasicSchoolManagement.BusinessLogic;
 using WebBasicSchoolManagement.DataAccess;
 using WebBasicSchoolManagement.Database.AppDbContextModels;
+using WebBasicSchtoolManagement.MVC.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<StudentService>();
 builder.Services.AddScoped<StudentDataAccess>();
+builder.Services.AddScoped<TeacherViewModel>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
