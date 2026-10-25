@@ -37,8 +37,8 @@
                   
                         <div class="col-md-6 mb-3">
                          <label asp-for="@Model.Subjects" class="form-label">Subject</label>
+                         @Html.DropDownListFor(model => model.SelectedItem, Model.Subjects, "Select Subject", new { @class = "form-control" })
 
-                        @Html.DropDownListFor(model => model.Subjects, Model.Subjects, "Select Subject", new { @class = "form-control"})
                      </div>
 
 

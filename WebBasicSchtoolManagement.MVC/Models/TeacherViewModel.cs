@@ -52,13 +52,13 @@ namespace WebBasicSchtoolManagement.MVC.Models
 		public async Task<IEnumerable<SelectListItem>> GetSubjects()
         {
 			List<TblSubject> _SubjectList = await _db.TblSubjects.ToListAsync();
-			IEnumerable<SelectListItem> subject = _SubjectList.Select(s => new SelectListItem
+			IEnumerable<SelectListItem> Subjects = _SubjectList.Select(s => new SelectListItem
 			{
 				Value = s.Id.ToString(),
 				Text = s.SubName
 			}).ToList();
 
-			return subject;
+			return Subjects;
         }
     }
 
